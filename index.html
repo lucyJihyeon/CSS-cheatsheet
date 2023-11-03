@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code?
+        Give it a permanent home and add it to this page! Select any snippet
+        below and it'll automatically select all of the code for you to copy.
+      </p>
+    </header>
+
+    <section>
+      <h2 class="title">Flexbox Row</h2>
+      <p>Use these three properties to create a Flexbox row layout.</p>
+      <p class="code">
+        .row { <br />
+        &nbsp;&nbsp;display: flex; <br />
+        &nbsp;&nbsp;flex-direction: row;<br />
+        &nbsp;&nbsp;flex-wrap: wrap;<br />
+        }
+      </p>
+    </section>
+    <section>
+      <h2 class="title">Flexbox Column</h2>
+      <p>Use this to create a Flexbox column layout.</p>
+      <p class="code">
+        .column { <br />
+        &nbsp; &nbsp;display: flex; <br />
+        &nbsp; &nbsp;flex-direction: column<br />
+        &nbsp; &nbsp;}
+      </p>
+    </section>
+    <section>
+      <h2 class="title">CSS Grid Layout</h2>
+      <p>Build a 12-column layout using CSS Grid</p>
+      <p class="code">
+        .grid { <br />
+        &nbsp;&nbsp;display: grid;<br />
+        &nbsp;&nbsp;width: 100%; <br/>
+        &nbsp;&nbsp;grid-template-columns: <br/>
+        repeat(12,1fr);<br/>
+        }
+      </p>
+    </section>
+    <section>
+      <h2 class="title">Linear Gradients</h2>
+      <p>This will create a background linear gradient from top to bottom</p>
+      <p class="code">
+        .linear-gradient-background { <br/>
+        &nbsp;background-image: linear-gradient (<br/>
+        &nbsp;&nbsp;rgba(232, 102, 236, 0.3) 0%,<br/>
+        &nbsp;&nbsp; rgba(232, 102, 236, 0.6) 100%<br/>
+        &nbsp; );<br/>
+     }
+      </p>
+    </section>
+    <section>
+      <h2 class="title">Box Transition Glow</h2>
+      <p>Use transition and box shadows to glow on hover.</p>
+      <p class="code">
+        .code-card .card-header { <br/>
+        &nbsp;&nbsp;border-radius: 8px;<br/>
+        &nbsp;&nbsp;transition: all 0.5s ease-in-out; <br/>
+        } <br/>
+        .code-card: hover.<br/>
+        .code-card: hover .card-header { <br/>
+        &nbsp;&nbsp;box-shadow: inset Ox Opx 8px <br/>
+        rgba (232, 102, 236, 1), 0 0 15px rgba
+        (232, 102, 236, 1); <br/>
+        }
+      </p>
+    </section>
+    <section>
+      <h2 class="title">Overlay Card with Title</h2>
+      <p>
+        Use position properties and negative margins to raise elements higher
+        than their natural starting point.
+      </p>
+      <p class="code">
+        .card-header { <br/>
+        &nbsp;&nbsp;position: relative; <br/>
+        &nbsp;&nbsp;margin-top: -20px; <br/>
+        }
+      </p>
+    </section>
+    <footer>
+      <strong>Made with &#10084; and CSS</strong>
+    </footer>
+  </body>
+</html>
